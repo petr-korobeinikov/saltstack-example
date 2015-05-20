@@ -13,3 +13,4 @@ test:
 dev:
   '*':
     - motd
+    - nginx

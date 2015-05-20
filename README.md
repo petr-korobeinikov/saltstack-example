@@ -40,3 +40,33 @@ Failed:    0
 ------------
 Total states run:     1
 ```
+
+More complex example: installing nginx
+--------------------------------------
+
+1. Call ``salt-call state.highstate`` to raise all available states.
+
+It should produce the following output:
+
+```
+...
+          ID: nginx
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: nginx
+     Started: 12:01:52.293880
+    Duration: 189716.635 ms
+     Changes:
+
+...
+
+----------
+          ID: nginx
+    Function: service.running
+      Result: True
+     Comment: The service nginx is already running
+     Started: 12:05:02.201175
+    Duration: 31.232 ms
+     Changes:
+...
+```
