@@ -3,16 +3,16 @@
 # 2. Service (if any) should be running.
 # 3. Service configuration (if any) should be present.
 
-nginx:
+nginx:                                    # State id can be used as package name.
   pkg:
-    - installed
+    - installed                           # It should be installed.
   service:
-    - running
+    - running                             # It should be running.
   watch:
-    - file: /etc/nginx/
+    - file: /etc/nginx/                   # It should be restarted on config change.
 
-/etc/nginx/:
+/etc/nginx/:                              # State id can be used as file (or directory) name.
   file:
-    - recurse
-    - source: salt://nginx/etc/nginx/
-    - template: jinja
+    - recurse                             # It should be copied recursively
+    - source: salt://nginx/etc/nginx/     #   from salt data
+    - template: jinja                     #   with jinja preprocessing.
