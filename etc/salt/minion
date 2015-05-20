@@ -1,29 +1,32 @@
+# This is masterless setup.
 file_client: local
 
+# Default environment is "dev".
+# Change it to "base", "test", or "prod" and see what happens.
 environment: dev
 
-file_roots:
+file_roots:             # Salt states root directories.
   base:
-    - /srv/salt/base
+    - /srv/salt/base    # Base configuration (fallback).
   prod:
-    - /srv/salt/prod
-    - /srv/salt/base
+    - /srv/salt/prod    # Production configuration.
+    - /srv/salt/base    # And fallback to base.
   test:
-    - /srv/salt/test
-    - /srv/salt/base
+    - /srv/salt/test    # Test (or staging) configuration.
+    - /srv/salt/base    # And fallback to base.
   dev:
-    - /srv/salt/dev
-    - /srv/salt/base
+    - /srv/salt/dev     # Development configuration.
+    - /srv/salt/base    # And fallback to base.
 
-pillar_roots:
+pillar_roots:           # Pillar data directories. Contains sensitive data.
   base:
-    - /srv/pillar/base
+    - /srv/pillar/base  # Base data directory.
   prod:
-    - /srv/pillar/prod
-    - /srv/pillar/base
+    - /srv/pillar/prod  # Production data directory.
+    - /srv/pillar/base  # And fallback to base.
   test:
-    - /srv/pillar/test
-    - /srv/pillar/base
+    - /srv/pillar/test  # Test data directory.
+    - /srv/pillar/base  # And fallback to base.
   dev:
-    - /srv/pillar/dev
-    - /srv/pillar/base
+    - /srv/pillar/dev   # Development data directory.
+    - /srv/pillar/base  # And fallback to base.
