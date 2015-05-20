@@ -15,3 +15,4 @@ nginx:
   file:
     - recurse
     - source: salt://nginx/etc/nginx/
+    - template: jinja
