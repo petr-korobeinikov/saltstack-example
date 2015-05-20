@@ -86,3 +86,12 @@ It should produce the following output:
      Changes:
 ...
 ```
+
+TODO
+----
+
+* Apt-repository example.
+* Postgres example with different hba.
+* Crontab with state.
+* Crontab with file.
+* Memcached with different conf for dev/prod envs.
