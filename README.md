@@ -6,7 +6,7 @@ Getting started
 
 1. Install vagrant from https://www.vagrantup.com.
 2. Get the source code of this repo.
-3. Copy ``Vagrantfile.dist`` to ``Vagrantfile.dist`` and run ``vagrant up``
+3. Copy ``Vagrantfile.dist`` to ``Vagrantfile`` and run ``vagrant up``
 
 Directory structure
 -------------------
