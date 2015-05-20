@@ -1,0 +1,1 @@
+Welcome to "{{ salt['pillar.get']('env-name') }}" environment!

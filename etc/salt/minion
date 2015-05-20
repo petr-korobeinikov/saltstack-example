@@ -1,0 +1,29 @@
+file_client: local
+
+environment: dev
+
+file_roots:
+  base:
+    - /srv/salt/base
+  prod:
+    - /srv/salt/prod
+    - /srv/salt/base
+  test:
+    - /srv/salt/test
+    - /srv/salt/base
+  dev:
+    - /srv/salt/dev
+    - /srv/salt/base
+
+pillar_roots:
+  base:
+    - /srv/pillar/base
+  prod:
+    - /srv/pillar/prod
+    - /srv/pillar/base
+  test:
+    - /srv/pillar/test
+    - /srv/pillar/base
+  dev:
+    - /srv/pillar/dev
+    - /srv/pillar/base
