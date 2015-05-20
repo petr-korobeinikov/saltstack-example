@@ -8,3 +8,10 @@ nginx:
     - installed
   service:
     - running
+  watch:
+    - file: /etc/nginx/
+
+/etc/nginx/:
+  file:
+    - recurse
+    - source: salt://nginx/etc/nginx/
