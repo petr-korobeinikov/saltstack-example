@@ -6,7 +6,23 @@ Getting started
 
 1. Install vagrant from https://www.vagrantup.com.
 2. Get the source code of this repo.
-3. Run ``vagrant up``
+3. Copy ``Vagrantfile.dist`` to ``Vagrantfile.dist`` and run ``vagrant up``
+
+Directory structure
+-------------------
+
+```
+├── etc
+│   └── salt                    # Salt (minion) configuration
+└── srv
+    ├── pillar                  # Salt data
+    │   ├── base                #   for "base" environment
+    │   ├── dev                 #   for "development" environment
+    │   ├── prod                #   for "production" environment
+    │   └── test                #   for "test" environment
+    └── salt                    # Salt states
+        └── base                #   "base" used by default
+```
 
 Very basic example: message of the day
 --------------------------------------
