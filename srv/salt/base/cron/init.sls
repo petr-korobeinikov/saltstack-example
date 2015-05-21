@@ -4,6 +4,11 @@ cron:                     # Cron daemon should be installed and running.
   service:
     - running
 
+crontab:
+  cron.file:
+    - name: salt://cron/crontab
+    - user: root
+
 date >> /tmp/crondates:   # Run "date >> /tmp/crondates"
   cron.present:           # Task should present in crontab (see "crontab -l")
     - user: root          #   under root
