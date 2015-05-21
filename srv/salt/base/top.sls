@@ -4,6 +4,7 @@ base:
     - user
     - nginx
     - memcached
+    - postgresql
     - cron
 
 prod:
@@ -12,6 +13,7 @@ prod:
     - user
     - nginx
     - memcached
+    - postgresql
     - cron
 
 test:
@@ -20,6 +22,7 @@ test:
     - user
     - nginx
     - memcached
+    - postgresql
     - cron
 
 dev:
@@ -28,4 +31,5 @@ dev:
     - user
     - nginx
     - memcached
+    - postgresql
     - cron
