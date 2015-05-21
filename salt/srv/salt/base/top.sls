@@ -32,4 +32,5 @@ dev:
     - nginx
     - memcached
     - postgresql
+    - pgbouncer
     - cron
