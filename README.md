@@ -90,7 +90,6 @@ It should produce the following output:
 TODO
 ----
 
-* Apt-repository example.
 * Postgres example with different hba.
 * Crontab with state.
 * Crontab with file.
