@@ -8,6 +8,12 @@ Getting started
 2. Get the source code of this repo.
 3. Copy ``Vagrantfile.dist`` to ``Vagrantfile`` and run ``vagrant up``
 
+Basic commands
+--------------
+
+* ``salt-call state.sls id`` &mdash; apply single state with specified id.
+* ``salt-call sate.highstate`` &mdash; apply all available states.
+
 Directory structure
 -------------------
 
