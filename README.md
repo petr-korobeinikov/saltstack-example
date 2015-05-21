@@ -14,6 +14,18 @@ Basic commands
 * ``salt-call state.sls id`` &mdash; apply single state with specified id.
 * ``salt-call sate.highstate`` &mdash; apply all available states.
 
+Currently available examples
+----------------------------
+
+Name        | Description                                          
+----------- | ------------------------------------------------------
+motd        | very basic file template.                            
+nginx       | install Nginx from official repo.                    
+memcached   | install Memcached with different configurations.     
+cron        | use state and file definition of cron task.          
+user        | add specific user and group.                         
+postgresql  | install and configure Postgresql from official repo. 
+
 Directory structure
 -------------------
 
