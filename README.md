@@ -91,4 +91,3 @@ TODO
 ----
 
 * Postgres example with different hba.
-* Memcached with different conf for dev/prod envs.

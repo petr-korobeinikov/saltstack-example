@@ -3,6 +3,7 @@ base:
     - motd
     - user
     - nginx
+    - memcached
     - cron
 
 prod:
@@ -10,6 +11,7 @@ prod:
     - motd
     - user
     - nginx
+    - memcached
     - cron
 
 test:
@@ -17,6 +19,7 @@ test:
     - motd
     - user
     - nginx
+    - memcached
     - cron
 
 dev:
@@ -24,4 +27,5 @@ dev:
     - motd
     - user
     - nginx
+    - memcached
     - cron
