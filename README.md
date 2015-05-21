@@ -91,7 +91,6 @@ TODO
 ----
 
 * Postgres example with different hba.
-* Crontab with state.
 * Crontab with file.
 * Memcached with different conf for dev/prod envs.
 * User add example.
