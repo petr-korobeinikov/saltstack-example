@@ -25,3 +25,9 @@ postgresql:
     - recurse
     - source: salt://postgresql/etc/postgresql/9.4/main
     - template: jinja
+
+example:
+  postgres_user.present:
+    - password: example
+  postgres_database.present:
+    - owner: example
