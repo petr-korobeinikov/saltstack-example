@@ -15,6 +15,8 @@ postgresql:
   service:
     - name: postgresql
     - running
+    - require:
+      - pkg: postgresql
   watch:
     - file: /etc/postgresql/9.4/main/
 
