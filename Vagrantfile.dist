@@ -9,10 +9,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.memory = 2048
   end
 
-  config.vm.synced_folder "srv/", "/srv/"
+  config.vm.synced_folder "salt/srv/", "/srv/"
 
   config.vm.provision :salt do |salt|
-    salt.minion_config = "etc/salt/minion"
+    salt.minion_config = "salt/etc/salt/minion"
     salt.run_highstate = false
   end
 end
