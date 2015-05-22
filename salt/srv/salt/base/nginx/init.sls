@@ -16,6 +16,8 @@ nginx:                                    # State id can be used as package name
     - installed                           # It should be installed.
   service:
     - running                             # It should be running.
+    - require:                            # It requires
+      - pkg: nginx                        #   to install nginx first.
   watch:
     - file: /etc/nginx/                   # It should be restarted on config change.
 
