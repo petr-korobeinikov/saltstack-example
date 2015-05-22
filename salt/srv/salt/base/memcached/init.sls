@@ -5,8 +5,8 @@ memcached:
     - running
     - require:
       - pkg: memcached
-  watch:
-    - file: /etc/memcached.conf
+    - watch:
+      - file: /etc/memcached.conf
 
 /etc/memcached.conf:
   file.managed:

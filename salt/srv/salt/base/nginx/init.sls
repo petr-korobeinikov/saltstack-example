@@ -18,8 +18,8 @@ nginx:                                    # State id can be used as package name
     - running                             # It should be running.
     - require:                            # It requires
       - pkg: nginx                        #   to install nginx first.
-  watch:
-    - file: /etc/nginx/                   # It should be restarted on config change.
+    - watch:
+      - file: /etc/nginx/                   # It should be restarted on config change.
 
 /etc/nginx/:                              # State id can be used as file (or directory) name.
   file:

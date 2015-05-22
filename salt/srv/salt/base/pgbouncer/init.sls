@@ -5,8 +5,8 @@ pgbouncer:
     - running
     - require:
       - pkg: pgbouncer
-  watch:
-    - file: /etc/pgbouncer/
+    - watch:
+      - file: /etc/pgbouncer/
 
 /etc/pgbouncer/:
   file:

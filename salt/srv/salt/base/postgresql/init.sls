@@ -17,8 +17,8 @@ postgresql:
     - running
     - require:
       - pkg: postgresql
-  watch:
-    - file: /etc/postgresql/9.4/main/
+    - watch:
+      - file: /etc/postgresql/9.4/main/
 
 /etc/postgresql/9.4/main/:
   file:
