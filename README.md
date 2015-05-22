@@ -24,7 +24,8 @@ nginx       | install Nginx from official repo.
 memcached   | install Memcached with different configurations.     
 cron        | use state and file definition of cron task.          
 user        | add specific user and group.                         
-postgresql  | install and configure Postgresql from official repo. 
+postgresql  | install and configure Postgresql from pgdg repo.     
+pgbouncer   | install and configure Pgbouncer from pgdg repo.      
 
 Directory structure
 -------------------
