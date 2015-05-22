@@ -3,6 +3,8 @@ cron:                     # Cron daemon should be installed and running.
     - installed
   service:
     - running
+    - require:
+      - pkg: cron
 
 crontab:
   cron.file:
