@@ -3,6 +3,8 @@ pgbouncer:
     - installed
   service:
     - running
+    - require:
+      - pkg: pgbouncer
   watch:
     - file: /etc/pgbouncer/
 
