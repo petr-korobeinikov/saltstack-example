@@ -1,5 +1,6 @@
 base:
   '*':
+    - pkgrepo
     - motd
     - user
     - nginx
@@ -9,6 +10,7 @@ base:
 
 prod:
   '*':
+    - pkgrepo
     - motd
     - user
     - nginx
@@ -18,6 +20,7 @@ prod:
 
 test:
   '*':
+    - pkgrepo
     - motd
     - user
     - nginx
@@ -27,6 +30,7 @@ test:
 
 dev:
   '*':
+    - pkgrepo
     - motd
     - user
     - nginx
