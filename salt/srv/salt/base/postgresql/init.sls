@@ -9,12 +9,12 @@ postgresql:
     - require:
       - pkg: postgresql
     - watch:
-      - file: /etc/postgresql/9.4/main/
+      - file: postgresql-conf
 
-/etc/postgresql/9.4/main/:
-  file:
-    - recurse
+postgresql-conf:
+  file.recurse:
     - source: salt://postgresql/files/
+    - name: /etc/postgresql/9.4/main/
     - template: jinja
 
 example:
