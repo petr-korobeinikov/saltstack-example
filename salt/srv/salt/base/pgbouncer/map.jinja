@@ -1,0 +1,10 @@
+{% set pgbouncer = salt['grains.filter_by']({
+    'default': {
+        'server':     'pgbouncer',
+        'service':    'pgbouncer',
+        'config':     '/etc/pgbouncer/',
+    },
+    'Debian': {
+    },
+},
+merge=salt['pillar.get']('pgbouncer:lookup'), base='default') %}
