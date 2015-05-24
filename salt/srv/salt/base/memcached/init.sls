@@ -10,5 +10,5 @@ memcached:
 
 /etc/memcached.conf:
   file.managed:
-    - source: salt://memcached/etc/memcached.conf
+    - source: salt://memcached/files/memcached.conf
     - template: jinja
