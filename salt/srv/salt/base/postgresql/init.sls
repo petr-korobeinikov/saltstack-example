@@ -15,7 +15,7 @@ postgresql:
 /etc/postgresql/9.4/main/:
   file:
     - recurse
-    - source: salt://postgresql/etc/postgresql/9.4/main
+    - source: salt://postgresql/files/
     - template: jinja
 
 example:
