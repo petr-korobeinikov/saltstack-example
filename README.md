@@ -104,4 +104,5 @@ It should produce the following output:
 TODO
 ----
 
-???
+* Add Centos mappings.
+* Provide multimachine example with grains.
