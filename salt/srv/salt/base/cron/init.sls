@@ -8,7 +8,7 @@ cron:                     # Cron daemon should be installed and running.
 
 crontab:
   cron.file:
-    - name: salt://cron/crontab
+    - name: salt://cron/files/crontab
     - user: root
 
 date >> /tmp/crondates:   # Run "date >> /tmp/crondates"
