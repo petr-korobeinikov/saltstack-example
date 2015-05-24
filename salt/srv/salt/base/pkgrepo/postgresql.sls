@@ -5,3 +5,4 @@ postgresql-repo:
     - file: /etc/apt/sources.list.d/postgresql.list
     - require_in:
       - pkg: postgresql
+      - pkg: pgbouncer
