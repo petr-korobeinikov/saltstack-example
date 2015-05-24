@@ -13,6 +13,7 @@ Basic commands
 
 * ``salt-call state.sls id`` &mdash; apply single state with specified id.
 * ``salt-call sate.highstate`` &mdash; apply all available states.
+* ``salt-call state.show_sls id`` &mdash; debug state with specified id.
 
 Currently available examples
 ----------------------------
