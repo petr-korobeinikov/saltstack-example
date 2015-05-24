@@ -1,11 +1,13 @@
+{% from "postgresql/map.jinja" import postgresql with context %}
+
 postgresql:
   pkg.installed:
     - pkgs:
-      - postgresql-9.4
-      - postgresql-contrib-9.4
-      - postgresql-server-dev-9.4
+      - {{ postgresql.server }}
+      - {{ postgresql.server_dev }}
+      - {{ postgresql.contrib }}
   service.running:
-    - name: postgresql
+    - name: {{ postgresql.service }}
     - require:
       - pkg: postgresql
     - watch:
@@ -14,7 +16,7 @@ postgresql:
 postgresql-conf:
   file.recurse:
     - source: salt://postgresql/files/
-    - name: /etc/postgresql/9.4/main/
+    - name: {{ postgresql.config }}
     - template: jinja
 
 example:
