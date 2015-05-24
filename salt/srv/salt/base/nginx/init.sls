@@ -16,5 +16,5 @@ nginx:                                    # State id can be used as package name
 /etc/nginx/:                              # State id can be used as file (or directory) name.
   file:
     - recurse                             # It should be copied recursively
-    - source: salt://nginx/etc/nginx/     #   from salt data
+    - source: salt://nginx/files/         #   from salt data
     - template: jinja                     #   with jinja preprocessing.
