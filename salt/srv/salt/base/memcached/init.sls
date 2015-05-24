@@ -1,14 +1,17 @@
+{% from "memcached/map.jinja" import memcached with context %}
+
 memcached:
   pkg.installed:
-    - name: memcached
+    - name: {{ memcached.server }}
   service.running:
+    - name: {{ memcached.service }}
     - require:
       - pkg: memcached
     - watch:
-      - file: /etc/memcached.conf
+      - file: memcached_conf
 
 memcached_conf:
   file.managed:
-    - name: /etc/memcached.conf
+    - name: {{ memcached.config }}
     - source: salt://memcached/files/memcached.conf
     - template: jinja
