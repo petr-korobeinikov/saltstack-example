@@ -7,8 +7,8 @@ pgbouncer:
     - watch:
       - file: /etc/pgbouncer/
 
-/etc/pgbouncer/:
-  file:
-    - recurse
+pgbouncer_conf:
+  file.recurse:
+    - name: /etc/pgbouncer/
     - source: salt://pgbouncer/files/
     - template: jinja
