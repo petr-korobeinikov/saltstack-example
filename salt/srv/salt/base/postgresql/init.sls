@@ -11,9 +11,9 @@ postgresql:
     - require:
       - pkg: postgresql
     - watch:
-      - file: postgresql-conf
+      - file: postgresql_conf
 
-postgresql-conf:
+postgresql_conf:
   file.recurse:
     - source: salt://postgresql/files/
     - name: {{ postgresql.config }}

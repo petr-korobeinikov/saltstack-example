@@ -1,4 +1,4 @@
-nginx-repo:
+nginx_repo:
   pkgrepo.managed:
     - name: deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx
     - key_url: http://nginx.org/keys/nginx_signing.key
