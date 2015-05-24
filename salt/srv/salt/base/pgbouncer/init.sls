@@ -1,6 +1,6 @@
 pgbouncer:
-  pkg:
-    - installed
+  pkg.installed:
+    - name: pgbouncer
   service:
     - running
     - require:

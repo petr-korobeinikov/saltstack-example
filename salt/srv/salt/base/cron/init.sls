@@ -1,6 +1,6 @@
 cron:                     # Cron daemon should be installed and running.
-  pkg:
-    - installed
+  pkg.installed:
+    - name: cron
   service:
     - running
     - require:
