@@ -11,5 +11,5 @@ pgbouncer:
 /etc/pgbouncer/:
   file:
     - recurse
-    - source: salt://pgbouncer/etc/pgbouncer/
+    - source: salt://pgbouncer/files/
     - template: jinja
