@@ -12,8 +12,8 @@ nginx:                                    # State id can be used as package name
     - watch:
       - file: /etc/nginx/                   # It should be restarted on config change.
 
-/etc/nginx/:                              # State id can be used as file (or directory) name.
-  file:
-    - recurse                             # It should be copied recursively
-    - source: salt://nginx/files/         #   from salt data
+nginx_conf:                               # State id can be used as file (or directory) name.
+  file.recurse:                           # It should be copied recursively
+    - name: /etc/nginx/                   #   to specified location
+    - source: salt://nginx/files/         #   from this location
     - template: jinja                     #   with jinja preprocessing.
