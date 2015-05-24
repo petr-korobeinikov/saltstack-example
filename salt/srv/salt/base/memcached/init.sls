@@ -1,8 +1,7 @@
 memcached:
   pkg.installed:
     - name: memcached
-  service:
-    - running
+  service.running:
     - require:
       - pkg: memcached
     - watch:

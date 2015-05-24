@@ -1,8 +1,7 @@
 pgbouncer:
   pkg.installed:
     - name: pgbouncer
-  service:
-    - running
+  service.running:
     - require:
       - pkg: pgbouncer
     - watch:

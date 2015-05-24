@@ -6,8 +6,7 @@
 nginx:                                    # State id can be used as package name.
   pkg.installed:                          # It should be installed.
     - name: nginx
-  service:
-    - running                             # It should be running.
+  service.running:                        # It should be running.
     - require:                            # It requires
       - pkg: nginx                        #   to install nginx first.
     - watch:

@@ -4,9 +4,8 @@ postgresql:
       - postgresql-9.4
       - postgresql-contrib-9.4
       - postgresql-server-dev-9.4
-  service:
+  service.running:
     - name: postgresql
-    - running
     - require:
       - pkg: postgresql
     - watch:
