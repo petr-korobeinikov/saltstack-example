@@ -8,6 +8,13 @@ Getting started
 2. Get the source code of this repo.
 3. Copy ``Vagrantfile.dist`` to ``Vagrantfile`` and run ``vagrant up``
 
+What to read?
+-------------
+
+1. [Introduction to salt](http://docs.saltstack.com/en/latest/topics/index.html)
+2. [Standalone minion](http://docs.saltstack.com/en/latest/topics/tutorials/standalone_minion.html)
+3. [Salt best practices](http://docs.saltstack.com/en/latest/topics/best_practices.html)
+
 Basic masterless commands
 -------------------------
 
