@@ -1,6 +1,7 @@
 base:
   '*':
     - pkgrepo
+    - locale
     - motd
     - user
     - nginx
@@ -11,6 +12,7 @@ base:
 prod:
   '*':
     - pkgrepo
+    - locale
     - motd
     - user
     - nginx
@@ -21,6 +23,7 @@ prod:
 test:
   '*':
     - pkgrepo
+    - locale
     - motd
     - user
     - nginx
@@ -31,6 +34,7 @@ test:
 dev:
   '*':
     - pkgrepo
+    - locale
     - motd
     - user
     - nginx
