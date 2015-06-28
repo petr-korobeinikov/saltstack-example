@@ -4,6 +4,7 @@ base:
     - locale
     - motd
     - user
+    - java
     - nginx
     - memcached
     - postgresql
@@ -15,6 +16,7 @@ prod:
     - locale
     - motd
     - user
+    - java
     - nginx
     - memcached
     - postgresql
@@ -26,6 +28,7 @@ test:
     - locale
     - motd
     - user
+    - java
     - nginx
     - memcached
     - postgresql
@@ -37,6 +40,7 @@ dev:
     - locale
     - motd
     - user
+    - java
     - nginx
     - memcached
     - postgresql
