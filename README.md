@@ -34,6 +34,7 @@ cron        | use state and file definition of cron task.
 user        | add specific user and group.                         
 postgresql  | install and configure Postgresql from pgdg repo.     
 pgbouncer   | install and configure Pgbouncer from pgdg repo.      
+java        | accept licence and install java 1.8.                 
 
 Directory structure
 -------------------
