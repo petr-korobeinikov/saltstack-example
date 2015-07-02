@@ -1,6 +1,7 @@
 base:
   '*':
     - pkgrepo
+    - util
     - locale
     - motd
     - user
@@ -13,6 +14,7 @@ base:
 prod:
   '*':
     - pkgrepo
+    - util
     - locale
     - motd
     - user
@@ -25,6 +27,7 @@ prod:
 test:
   '*':
     - pkgrepo
+    - util
     - locale
     - motd
     - user
@@ -37,6 +40,7 @@ test:
 dev:
   '*':
     - pkgrepo
+    - util
     - locale
     - motd
     - user
