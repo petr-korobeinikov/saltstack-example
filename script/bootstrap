@@ -9,5 +9,5 @@ cd "$(dirname "$0")/.."
 
 # !!! check for vagrant executable
 
-vagrant up
+vagrant up --provider virtualbox
 vagrant provision
