@@ -1,0 +1,8 @@
+[alias]
+        st = status
+        ci = commit -v
+        uncommit = reset --soft HEAD^
+        co = checkout
+        cm = checkout master
+        br = branch
+        l = log --oneline
