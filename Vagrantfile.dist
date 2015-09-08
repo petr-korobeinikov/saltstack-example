@@ -14,5 +14,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :salt do |salt|
     salt.minion_config = "salt/etc/salt/minion"
     salt.run_highstate = false
+    salt.bootstrap_options = "-P -c /tmp"
+    salt.verbose = true
+    salt.log_level = "info"
+    salt.colorize = true
   end
 end
