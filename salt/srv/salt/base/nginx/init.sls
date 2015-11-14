@@ -7,7 +7,7 @@
 
 nginx:                                    # State id can be used as package name.
   pkg.installed:                          # It should be installed.
-    - name: {{ nginx.server }}
+    - name: {{ nginx.package }}
   service.running:                        # It should be running.
     - name: {{ nginx.service }}
     - require:                            # It requires

@@ -2,7 +2,7 @@
 
 pgbouncer:
   pkg.installed:
-    - name: {{ pgbouncer.server }}
+    - name: {{ pgbouncer.package }}
   service.running:
     - name: {{ pgbouncer.service }}
     - require:

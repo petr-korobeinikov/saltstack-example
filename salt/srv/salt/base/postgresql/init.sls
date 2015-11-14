@@ -3,8 +3,8 @@
 postgresql:
   pkg.installed:
     - pkgs:
-      - {{ postgresql.server }}
-      - {{ postgresql.server_dev }}
+      - {{ postgresql.package }}
+      - {{ postgresql.package_dev }}
       - {{ postgresql.contrib }}
   service.running:
     - name: {{ postgresql.service }}

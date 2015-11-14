@@ -1,10 +1,10 @@
 {% set postgresql = salt['grains.filter_by']({
     'default': {
-        'server':     'postgresql-9.4',
-        'server_dev': 'postgresql-server-dev-9.4',
-        'contrib':    'postgresql-contrib-9.4',
-        'service':    'postgresql',
-        'config':     '/etc/postgresql/9.4/main/',
+        'package':     'postgresql-9.4',
+        'package_dev': 'postgresql-server-dev-9.4',
+        'contrib':     'postgresql-contrib-9.4',
+        'service':     'postgresql',
+        'config':      '/etc/postgresql/9.4/main/',
     },
     'Debian': {
     },

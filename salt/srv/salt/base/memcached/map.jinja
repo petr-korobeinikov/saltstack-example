@@ -1,6 +1,6 @@
 {% set memcached = salt['grains.filter_by']({
     'default': {
-        'server':     'memcached',
+        'package':    'memcached',
         'service':    'memcached',
         'config':     '/etc/memcached.conf',
     },

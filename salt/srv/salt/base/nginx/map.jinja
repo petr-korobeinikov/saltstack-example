@@ -1,6 +1,6 @@
 {% set nginx = salt['grains.filter_by']({
     'default': {
-        'server':     'nginx',
+        'package':    'nginx',
         'service':    'nginx',
         'config':     '/etc/nginx/',
     },

@@ -2,7 +2,7 @@
 
 memcached:
   pkg.installed:
-    - name: {{ memcached.server }}
+    - name: {{ memcached.package }}
   service.running:
     - name: {{ memcached.service }}
     - require:
