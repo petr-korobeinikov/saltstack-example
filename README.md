@@ -55,7 +55,7 @@ Very basic example: message of the day
 --------------------------------------
 
 1. Log in to your virtual machine ``vagrant ssh``.
-2. Became a root: ``sudo su - ``
+2. Became a root: ``sudo -i``
 3. Call ``salt-call state.sls motd`` to raise motd state.
 
 It should produce output like this:
